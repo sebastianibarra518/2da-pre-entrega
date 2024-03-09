@@ -9,7 +9,10 @@ font-family: "Montserrat Alternates", sans-serif; */
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
+/* comienzo index */
 
 section img{
     height: auto;
@@ -22,7 +25,6 @@ section img{
 .navbar{
     min-height: 80px;
     position: sticky;
-    /* width: 100%; */
 }
 .navbar a{
     text-shadow: 0 0 5px blue;
@@ -113,7 +115,6 @@ font-size: 40px;
     footer{
         font-size: 30px;
         text-align: center;
-        margin-right: 5px;
     }
     .redes a{
         font-size: 40px;
@@ -142,3 +143,40 @@ font-size: 40px;
         
     }
 }
+
+/* fin index comienzo de servicios */
+
+body{
+    margin: auto;
+}
+
+.motor {
+    display: flex;
+    /* padding: 20px; */
+    background-color: rgba(0, 0, 0, 0.884);
+    color: white;
+    text-shadow: 0 0 7px white;
+}
+
+h2{
+    background-color: rgba(0, 0, 0, 0.863);
+    color: white;
+    text-align: center;
+    text-shadow: 0 0 7px white;
+    margin: 0%;
+}
+.motor h2{
+    padding: 25px;
+    width: 20%;
+}
+.motor h3{
+    font-size: 20px;
+    width: 30%;
+    padding: 10px;
+
+}
+
+img {
+    width: 40%;
+}
+
