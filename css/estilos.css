@@ -1,21 +1,39 @@
-footer{
-    text-align: center;
-    padding: 25px;
-    font-size: 30px;
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* font-family: "Madimi One", sans-serif; */
+/* font-family: "Montserrat Alternates", sans-serif;
+font-family: "Montserrat Alternates", sans-serif;
+font-family: "Montserrat Alternates", sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
 }
 
 section img{
     height: auto;
-    max-width: 310PX;
+    max-width: 280PX;
     display: flex;
+    margin: 20px;
+    padding: 10px;
 }
 
 .navbar{
-    min-height: 100px;
+    min-height: 80px;
     position: sticky;
-    width: 100%;
+    /* width: 100%; */
+}
+.navbar a{
+    text-shadow: 0 0 5px blue;
+    font-size: 15px;
+    font-family: "Montserrat Alternates", sans-serif;
 }
 
+.navbar a:hover{
+    color: orangered;
+    text-shadow: 0 0 10px white;
+}
 .jumbotron{
     background-image: url(../multimedia/FONDO.jpg);
     background-size: cover;
@@ -25,18 +43,25 @@ section img{
 }
 
 .call{
-    margin-top: 120px;
+    margin-top: 220px;
     text-align: center;
-    text-shadow: 0 0 5px black;
-    color: white;
+    text-shadow: 0 0 15px white;
+    color: black;
+    padding: 25px;
+    
 }
 
 h1{
     font-size: 40px;
+    font-family: "Madimi One", sans-serif;
 }
 
+h2{
+    font-family: "Madimi One", sans-serif;
+}
 p{
-    font-size: 20px;
+    font-size: 22px;
+    font-family: "Montserrat Alternates", sans-serif;
 }
 
 @media only screen and (max-width: 768px){
@@ -57,3 +82,63 @@ p{
     }
 }
 
+footer{
+    text-align: end;
+    font-size: 40px;
+    font-family: "Montserrat Alternates", sans-serif;
+    padding: 100px;
+}
+
+.redes a{
+    text-decoration: none;
+    text-align: end;
+    color: white;
+    font-size: 60px;
+    text-shadow: 0 0 10px white;
+    margin-top: 35px;
+    margin-left: 20px;
+    margin-inline-end: 10px;
+}
+
+.arriba i{
+color: white;
+text-align: end;
+margin-left: 100PX;
+margin-top: 35px;
+text-shadow: 0 0 10px white;
+font-size: 40px;
+}
+
+@media only screen and (max-width: 768px){
+    footer{
+        font-size: 30px;
+        text-align: center;
+        margin-right: 5px;
+    }
+    .redes a{
+        font-size: 40px;
+    }
+    .arriba i{
+        font-size: 35px;
+        text-align: center;
+        margin-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    footer{
+        font-size: 15px;
+        text-align: center;
+        margin-right: 1px;
+    }
+    .redes a{
+        font-size: 20px;
+        margin-left: 8px;
+    }
+    .arriba i{
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+        
+    }
+}
