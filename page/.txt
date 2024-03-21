@@ -1,3 +1,3 @@
-agregue mixim en inicio 
-variables para scss
-agregue @media a las paginas que faltaban
+1 agregue mixim en inicio 
+2 variables para scss
+3 agregue @media a las paginas que faltaban
