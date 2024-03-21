@@ -19,7 +19,6 @@ font-family: "Montserrat Alternates", sans-serif; */
 }
 
 h2 {
-  background-color: rgb(128, 128, 128);
   color: white;
   text-align: center;
   text-shadow: 0 0 7px red;
@@ -37,6 +36,7 @@ img {
   color: red;
   text-shadow: 0 0 10px white;
   font-size: 30px;
+  background-color: gray;
 }
 .motor h2 p {
   color: white;
@@ -73,10 +73,6 @@ span {
   font-size: 35px;
   color: white;
   text-shadow: 0 0 20px red;
-}
-
-body {
-  background-color: black;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -129,6 +125,9 @@ body {
   .call2 p {
     font-size: 15px;
   }
+  footer {
+    margin: 0;
+  }
 }
 @media only screen and (max-width: 320px) {
   img {
@@ -163,6 +162,9 @@ body {
   .motor p2 {
     display: none;
   }
+  footer {
+    margin: 0;
+  }
 }
 /* fin pagina servicios */
 /* inicio pagina galeria */
@@ -181,6 +183,10 @@ h2 {
 
 p {
   text-align: center;
+}
+
+body {
+  background-color: black;
 }
 
 .call a {
@@ -282,15 +288,35 @@ p {
 /* inicio pag donde estamos */
 h3 {
   color: white;
-  text-shadow: 0 0 7px white;
-  font-size: 25px;
+  text-shadow: 0 0 10px white;
+  font-size: 45px;
 }
 
-iframe {
-  border-radius: 15px;
-  margin: 50px 50px 50px 200px;
+@media only screen and (max-width: 1200px) {
+  h3 {
+    color: white;
+    text-shadow: 0 0 7px white;
+    font-size: 35px;
+  }
+  iframe {
+    border-radius: 15px;
+    margin: 50px 50px 50px 200px;
+  }
 }
-
+@media only screen and (max-width: 768px) {
+  h3 {
+    font-size: 25px;
+  }
+  iframe {
+    border-radius: 5px;
+    margin: 20px 20px 20px 80px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  h3 {
+    font-size: 20px;
+  }
+}
 /* fin pag donde estamos */
 /* comienzo index */
 section img {
@@ -494,30 +520,130 @@ footer {
 }
 /* fin index comienzo de servicios */
 /* inicio pag contacto */
-form {
-  background-color: rgba(255, 255, 255, 0.711);
-  text-shadow: 0 0 10px;
-  border-radius: 15px;
-  width: 600px;
-  padding-left: 20px;
-  margin: 40px 150px;
-  font-size: 200%;
-  font-weight: 1000;
+@media only screen and (min-width: 1200px) {
+  h2 {
+    font-size: 55px;
+  }
+  h3 {
+    font-size: 45px;
+  }
+  form {
+    background-color: rgba(255, 255, 255, 0.711);
+    text-shadow: 0 0 10px black;
+    border-radius: 15px;
+    width: 600px;
+    padding-left: 20px;
+    margin: 10px 200px 20px 50px;
+    font-size: 200%;
+  }
+  form input {
+    border-radius: 10%;
+    width: 90%;
+    padding: 1.5%;
+  }
+  form .enviar {
+    text-align: end;
+    margin: 5px 50px 5px 10px;
+  }
+  .enviar a {
+    color: black;
+  }
 }
-form input {
-  border-radius: 10%;
-  width: 90%;
-  padding: 1.5%;
+@media only screen and (min-width: 1024px) {
+  body {
+    background-color: black;
+  }
+  h2 {
+    font-size: 45px;
+  }
+  h3 {
+    font-size: 35px;
+  }
+  form {
+    background-color: gray;
+    text-shadow: 0 0 8px black;
+    border-radius: 10px;
+    width: 500px;
+    padding-left: 50px;
+    margin: 80px 100px 80px 250px;
+    font-size: 40px;
+  }
+  input {
+    border-radius: 10%;
+    width: 80%;
+    padding: 1%;
+  }
+  .enviar {
+    text-align: end;
+    margin: 5px 50px 5px 10px;
+  }
+  .enviar a {
+    color: black;
+  }
+  footer {
+    margin: 0;
+  }
 }
-form .enviar {
-  text-align: end;
-  margin: 5px 50px 5px 10px;
+@media only screen and (min-width: 768px) {
+  body {
+    background-color: black;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 30px;
+  }
+  form {
+    background-color: gray;
+    text-shadow: 0 0 6px black;
+    font-size: 30px;
+    border-radius: 8px;
+    padding-left: 30px;
+    width: 450px;
+    margin: 60px 80px 60px 180px;
+  }
+  input {
+    border-radius: 8%;
+  }
+  .enviar {
+    text-align: end;
+    margin: 3px 50px 5px;
+  }
+  .enviar a {
+    color: black;
+  }
 }
-
-.enviar a {
-  color: black;
+@media only screen and (max-width: 320px) {
+  body {
+    background-color: black;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  form {
+    background-color: gray;
+    text-shadow: 0 0 5px black;
+    font-size: 20px;
+    border-radius: 8px;
+    padding-left: 20px;
+    width: 280px;
+    margin: 20px 10px 20px 10px;
+  }
+  .enviar {
+    text-align: end;
+    margin: 3px 40px 5px;
+  }
+  .enviar a {
+    color: black;
+  }
+  footer {
+    margin: 0;
+  }
 }
-
 /* fin pag contacto */
 
 /*# sourceMappingURL=estilos.css.map */

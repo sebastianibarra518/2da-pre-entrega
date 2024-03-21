@@ -1,0 +1,3 @@
+agregue mixim en inicio 
+variables para scss
+agregue @media a las paginas que faltaban

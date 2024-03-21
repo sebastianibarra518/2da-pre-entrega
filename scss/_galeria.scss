@@ -1,5 +1,6 @@
 /* inicio pagina galeria */
 
+
 .galeria {
     display: grid;
     grid-template-columns: 1fr;
@@ -16,6 +17,10 @@ h2{
 
 p{
     text-align: center;
+}
+
+body {
+    background-color: $color-negro;
 }
 
 .call a {

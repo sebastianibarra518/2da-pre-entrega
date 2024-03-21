@@ -1,14 +1,39 @@
 /* inicio pag donde estamos */
+h3{
+    color: $color-blanco;
+    text-shadow: 0 0 10px $color-blanco;
+    font-size: 45px;
+}
 
+@media only screen and (max-width: 1200px) {
 h3 {
     color: $color-blanco;
     text-shadow: 0 0 7px $color-blanco;
-    font-size: 25px;
+    font-size: 35px;
 }
 
 iframe {
     border-radius: 15px;
     margin: 50px 50px 50px 200px;
+}
+}
+
+@media only screen and (max-width: 768px) {
+    h3{
+    font-size: 25px;
+    }
+
+    iframe{
+        border-radius: 5px;
+        margin: 20px 20px 20px 80px;
+    }
+} 
+
+@media only screen and (max-width: 320px) {
+    h3{
+        font-size: 20px;
+    }
+
 }
 
 /* fin pag donde estamos */
