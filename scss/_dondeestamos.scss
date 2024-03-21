@@ -1,4 +1,5 @@
 /* inicio pag donde estamos */
+
 h3{
     color: $color-blanco;
     text-shadow: 0 0 10px $color-blanco;
@@ -12,9 +13,8 @@ h3 {
     font-size: 35px;
 }
 
-iframe {
+iframe{
     border-radius: 15px;
-    margin: 50px 50px 50px 200px;
 }
 }
 
@@ -33,7 +33,8 @@ iframe {
     h3{
         font-size: 20px;
     }
-
+    .map-container {
+        display: none;
 }
-
+}
 /* fin pag donde estamos */
