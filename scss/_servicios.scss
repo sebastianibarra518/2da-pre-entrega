@@ -2,9 +2,17 @@
 
 .motor {
     display: flex;
-    background-color: $color-gris;
+    background-color: $color-grisoscuro;
     color: $color-blanco;
     text-shadow: 0 0 7px $color-rojo;
+}
+.puntos{
+    background-color: $color-grisoscuro;
+}
+.puntos ol {
+    text-shadow: 0 0 7px $color-rojo;
+    margin: 0;
+    font-size: 30px;
 }
 
 h2 {
@@ -15,37 +23,33 @@ h2 {
 }
 
 img {
-    width: 35%;
+    width: 45%;
     height: 600px;
+    border-radius: 10px;
 }
 
 .motor h2 {
-    padding: 10px;
-    width: 20%;
+    padding: 30px 50px 50px 50px;
+    width: 60%;
     color: $color-rojo;
     text-shadow: 0 0 10px $color-blanco;
-    font-size: 30px;
+    font-size: 50px;
     background-color: $color-gris;
+    border: solid 7px $color-rojo;
+    border-radius: 10px;
 
     p {
         color: $color-blanco;
         text-shadow: 0 0 7px $color-rojo;
-        font-size: 17px;
+        font-size: 28px;
     }
 }
 
 span {
     color: $color-negro;
-    font-size: 35px;
+    font-size: 55px;
 }
 
-.motor h3 {
-    font-size: 15px;
-    width: 35%;
-    padding: 15px;
-    margin: 15px;
-    text-shadow: 0 0 4px $color-rojo;
-}
 
 .call2 {
     border: 10px solid $color-rojo;
@@ -95,30 +99,28 @@ span {
 
 @media only screen and (max-width: 768px) and (min-width: 321px) {
     img {
-        width: 40%;
-        height: 550px;
+        width: 50%;
+        height: 450px;
     }
 
     .motor {
-        height: 550px;
+        height: 450px;
 
         h2 {
-            font-size: 20px;
+            font-size: 35px;
             text-shadow: 0 0 3px $color-negro;
 
             p {
-                font-size: 14px;
+                font-size: 19px;
             }
         }
     }
 
     span {
-        font-size: 25px;
+        font-size: 38px;
     }
-
-    .motor h3 {
-        font-size: 12px;
-        padding: 12px;
+    .puntos ol{
+        font-size: 20px;
     }
 
     .call2 {
@@ -142,7 +144,7 @@ span {
 @media only screen and (max-width: 320px) {
     img {
         width: 60%;
-        height: 300px;
+        height: 250px;
     }
 
     .motor h2 {
@@ -158,13 +160,11 @@ span {
     .motor {
         h2 p {
             font-size: 10px;
+            text-shadow: 0 0 5px $color-negro;
         }
-
-        h3 {
-            display: none;
-            width: 1px;
-            height: 1px;
-        }
+    }
+    .puntos ol{
+        font-size: 15px;
     }
 
     .call2 {
@@ -182,7 +182,9 @@ span {
     .motor p2 {
         display: none;
     }
-    footer{margin: 0;}
+    footer{
+        margin: 0;
+    }
 }
 
 /* fin pagina servicios */
